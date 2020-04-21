@@ -5,6 +5,7 @@ const App = () => {
   return (
     <Fragment>
       <p>Project-Covid by webarch</p>
+      <p>Project started</p>
     </Fragment>
   );
 };
