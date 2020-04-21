@@ -4,7 +4,7 @@ import "./App.css";
 const App = () => {
   return (
     <Fragment>
-      <p>Project-Covid</p>
+      <p>Project-Covid by webarch</p>
     </Fragment>
   );
 };
