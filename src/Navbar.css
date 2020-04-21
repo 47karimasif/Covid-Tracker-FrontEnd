@@ -1,7 +1,7 @@
 .navbar {
-  box-shadow: 1px 1px 1px rgb(216, 243, 255);
+  box-shadow: 1px 1px 1px rgb(0, 85, 124);
   opacity: 0.9;
-  background: red;
+  background: white;
   overflow-x: hidden;
 }
 .nav-item {
