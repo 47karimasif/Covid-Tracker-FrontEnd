@@ -7,9 +7,9 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-light ">
       <div className="container">
         <NavLink to="/" className="navbar-brand">
-          <img src={covid} alt="logo" height="40" width="60" />
+          <img src={covid} alt="logo" height="40" width="40" />
           <span className="title">C</span>o<span className="title">vi</span>d{" "}
-          <span className="title">T</span>r<span className="title">ac</span>k
+          <span className="title">T</span>r<span className="title">ac</span>ker
         </NavLink>
         <button
           className="navbar-toggler"
