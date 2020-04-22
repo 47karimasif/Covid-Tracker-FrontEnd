@@ -20,15 +20,15 @@ const WorlMap = (props) => {
     fetchData();
   }, []);
   if (loading) {
-    return "....";
+    return (
+      <div className="row mt-5">
+        <div className="col-12">
+          <p className="text-center">Loading....</p>
+        </div>
+      </div>
+    );
   }
-  console.log(results);
-
   return (
-    // results.map((data) => {
-    //     return <p key={data.country}>{data.country}</p>;
-    //   });
-
     <section id="map" className="my-5">
       <div style={{ height: "100vh", width: "100%" }}>
         <GoogleMapReact
