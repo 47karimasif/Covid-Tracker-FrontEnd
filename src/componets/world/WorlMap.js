@@ -20,7 +20,7 @@ const WorlMap = (props) => {
     fetchData();
   }, []);
   if (loading) {
-    return " ";
+    return "....";
   }
   console.log(results);
 
