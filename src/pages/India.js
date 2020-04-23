@@ -1,19 +1,15 @@
 import React from "react";
-import Cards1 from '../componets/india/Cards1';
-import StatePicker1 from '../componets/india/StatePicker1';
-
-class India extends React.Component{
-
-    render(){
-        return(
-            <div>
-            <Cards1 />
-            <StatePicker1 />
-            </div>
-        )
-    }
+import StatePicker1 from "../componets/india/StatePicker1";
+import Cards from "../componets/india/Cards";
+class India extends React.Component {
+  render() {
+    return (
+      <div>
+        <Cards />
+        <StatePicker1 />
+      </div>
+    );
+  }
 }
 
 export default India;
-
-
