@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./componets/Home";
 import Navbar from "./componets/Navbar";
 import World from "./pages/World";
+import India from "./pages/India";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/world" component={World}></Route>
+          <Route exact path="/india" component={India}></Route>
         </Switch>
       </div>
     </Router>
