@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Cards1 from '../Cards/Cards1';
+import Charts from '../Charts/Charts';
 import { NativeSelect, FormControl} from '@material-ui/core'; 
 import styles from "./StatePicker.module.css"
 
@@ -53,7 +54,7 @@ const StatePicker1 = () => {
             })}
              </NativeSelect>
          </FormControl>
-            
+            <Charts state={selectedState} />
         </div>
     )
 }
