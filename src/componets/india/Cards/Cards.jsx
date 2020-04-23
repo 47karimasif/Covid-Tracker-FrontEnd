@@ -11,13 +11,10 @@ const Cards = () => {
   const fetchData = async () => {
     try {
       const res = await axios.get(url);
-      console.log(res.data);
       setTime(res.data);
       setUt(res.data.data.regional);
       setUtC(ut.loc);
       setResults(res.data.data.summary);
-      console.log(utC);
-      console.log(ut.totalConfirmed);
     } catch (error) {
       console.log(error);
     }
