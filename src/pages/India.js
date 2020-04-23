@@ -1,6 +1,6 @@
 import React from "react";
 import StatePicker1 from "../componets/india/StatePicker/StatePicker1";
-import Cards1 from "../componets/india/Cards/Cards1";
+import "../App.css";
 class India extends React.Component {
   render() {
     return (

@@ -18,6 +18,9 @@ body {
   border-left: 2px solid rgb(88, 0, 49);
   margin-left: 40px;
 }
+.StatePicker_formControl__UIZop {
+  margin-bottom: 0 !important;
+}
 
 @media (max-width: 576px) {
   .showcase {
@@ -37,5 +40,8 @@ body {
   .showcase-content .tagline {
     font-size: 1rem;
     padding: 0 !important;
+  }
+  .state {
+    margin-right: 0;
   }
 }

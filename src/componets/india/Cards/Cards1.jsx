@@ -4,7 +4,6 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import styles from "./Cards.module.css";
 import cx from "classnames";
 
-
 const useStats = () => {
   const [results, setResults] = useState(" ");
   const url = "https://api.covid19india.org/data.json";
@@ -38,23 +37,23 @@ const Cards1 = ({ state }) => {
   var confirmed = "";
   var recovered = "";
   var deaths = "";
-    if(!state){
-        state = 'Total';
+  if (!state) {
+    state = "Total";
+  }
+  Object.keys(stats).forEach((element) => {
+    if (state === stats[element].state) {
+      confirmed = stats[element].confirmed;
+      recovered = stats[element].recovered;
+      deaths = stats[element].deaths;
     }
-  Object.keys(stats).forEach(element => {
-      if(state === stats[element].state){
-          confirmed = stats[element].confirmed;
-          recovered = stats[element].recovered;
-          deaths = stats[element].deaths;
-      }
   });
-//   var i=0;
-//   for( i=0 ; i<38 ; i++ ){
-//       if(state = stats[37].confirmed)
-//       {
-//           console.log("EQUAL!");
-//       }
-//   }
+  //   var i=0;
+  //   for( i=0 ; i<38 ; i++ ){
+  //       if(state = stats[37].confirmed)
+  //       {
+  //           console.log("EQUAL!");
+  //       }
+  //   }
 
   // console.log(stats);
   return (
@@ -64,23 +63,38 @@ const Cards1 = ({ state }) => {
     //   <h1>Deaths: {deaths}</h1>
     // </div>
     /////////
-    
+
     <div className={styles.container}>
+      <div className="row">
+        <div className="col-12">
+          <h2 className="text-center">Covid-19 Statistics of India</h2>
+        </div>
+      </div>
       <Grid container spacing={3} justify="center">
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.infected)}>
+        <Grid
+          item
+          component={Card}
+          xs={12}
+          md={3}
+          className={cx(styles.card, styles.infected)}
+        >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Infected
             </Typography>
-            <Typography variant="h5">
-              {confirmed}
-            </Typography>
+            <Typography variant="h5">{confirmed}</Typography>
             <Typography variant="body2">
               Number of confirmed cases of COVID 19
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.recovered)}>
+        <Grid
+          item
+          component={Card}
+          xs={12}
+          md={3}
+          className={cx(styles.card, styles.recovered)}
+        >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Recovered
@@ -91,7 +105,13 @@ const Cards1 = ({ state }) => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.deaths)}>
+        <Grid
+          item
+          component={Card}
+          xs={12}
+          md={3}
+          className={cx(styles.card, styles.deaths)}
+        >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Deaths
@@ -103,9 +123,8 @@ const Cards1 = ({ state }) => {
           </CardContent>
         </Grid>
       </Grid>
-      </div>
+    </div>
     ////////
-    
   );
 };
 export default Cards1;
