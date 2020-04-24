@@ -20,11 +20,11 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <NavLink to="/" className="nav-link">
                 <span className="link-name py-1">Home</span>
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <NavLink to="/india" className="nav-link">
                 <span className="link-name py-1">Indian-Stats</span>

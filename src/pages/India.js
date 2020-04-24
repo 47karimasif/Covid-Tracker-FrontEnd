@@ -4,7 +4,7 @@ import "../App.css";
 class India extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <StatePicker1 />
       </div>
     );
