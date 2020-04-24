@@ -7,50 +7,8 @@
 }
 
 body {
-  
-  background-color: white;
-}
-.navbar-toggler{
-  border: none;
-}
-nav{
-  border-bottom: 1px solid blue ;
-}
-nav ul li{
-  margin-right: 5px;
-}
-nav ul li:hover{
-  border-bottom: 2px solid maroon;
-}
-.card{
-  box-sizing: border-box;
-  border: 1px solid black;
-  box-shadow: 1px green;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: fantasy;
   background-color: white;
-}
-.navbar-toggler{
-  border: none;
-}
-nav{
-  border-bottom: 1px solid blue ;
-}
-nav ul li{
-  margin-right: 5px;
-}
-nav ul li:hover{
-  border-bottom: 2px solid maroon;
 }
 
 .service_box{
