@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1" />
     <!--preloader-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   
+    
     <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh68N9jp"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"/>
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- bootstrap -->  
@@ -27,117 +27,130 @@
     <link
       href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap"
       rel="stylesheet"/>
+ 
+
     <link rel="stylesheet" href="style.css" />
 
-    <title>COVID-19</title>
+    <title>Covid Tracker</title>
+    <link rel="icon" href="logo.png" type="image/ico" />
   </head>
   <body>
        
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#"><i class="fas fa-virus fa-2x"></i> </a>
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="width: 40px;">Covid Tracker </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+    <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class=" navbar-nav text">
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#">Indian-stats</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">India</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Global-stats</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Global</a>
-        </li>    
+          
       </ul>
      </div>
-      <form class="form-inline">
-        <input class="form-control mr-sm-1" type="search" placeholder="Search for countries..." aria-label="Search">
-        <button class="btn btn-success" type="submit">Search</button>
-      </form>
-  </nav>
+  </div> 
+</nav>
 
-
-   <section id="main">
-     <div class="container">
-       <div class="row">
-         <div class="col mt-5">
-          <img src="https://drive.google.com/uc?id=1C0uM91oDYjRaiOV8W38OmgcpS9b1pSX0" alt="" style="width: 300px;">
-         </div>
-         <div class="col mt-5">
-           <h2 class="font-weight-bolder text-underline">COVID-19</h2>
-          <p> Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
-            Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.</p>
-          <h4 class="font-weight-bold">How it spreads?</h4>
-          <p>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.
-            You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.</p>  
-          </div>
-       </div>
-     </div>
-   </section>
-
-
-    <section id="second" class="mt-5">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-sm-6">
-                <div class="row">
-                 <div class="col-lg-6 col-sm-12 text-center mt-5">
-                    <i class="fas fa-viruses fa-5x"></i>
-                    <h2>Total Cases</h2>
-                    <p>22,23,308</p>
-
-                </div>
-                <div class="col-lg-6 col-sm-12 text-center mt-5">
-                    <i class="fas fa-lungs-virus fa-5x"></i>
-                    <h2>Total Deaths</h2>
-                    <p>2,09,872</p>
-                </div>
-                    <div class="col-lg-6 col-sm-12 text-center mt-5">
-                        <i class="fas fa-head-side-virus fa-5x"></i>
-                        <h2>Total Active Cases</h2>
-                        <p>12,23,443</p>
+<section>
+  <div class="container mt-5">
+    <h1 class="text-center font-weight-bold">
+      <u>Global COVID-19 Statistics</u>
+   </h1>
+   <h6 class="text-right">Last Updated:
+     <!--time and date-->
+     24-04-2020
+   </h6>
+  </div>
+  <div class="container">
     
-                    </div>
-                    <div class="col-lg-6 col-sm-12 text-center mt-5">
-                        <i class="fas fa-virus-slash fa-5x"></i>
-                        <h2>Total Recoveries</h2>
-                        <p>9,09,873</p>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-6 mt-5">
-                    <img src="https://drive.google.com/uc?id=1-zYyyWLBDS1qVkuSAgUVeTA6nSLSCyEU" alt="" style="width: 300px;">
+      
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 p-3">
+               <div class="service_box blue">
+                   <div class="service_content">
+                       <h3 class="title">Global Cases</h3>
+                       
+                       <div class="service_icon">
+                           <span><i class="fas fa-virus fa-2x"></i> </span>
+                       </div>
+                       <h4 class="cases mt-2">2,765,872</h4>
                    </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-sm-6 p-3">
+            <div class="service_box green">
+              <div class="service_content">
+                <h3 class="title">Total Recoveries</h3>
+                
+                <div class="service_icon">
+                    <span><i class="fas fa-shield-virus fa-2x"></i> </span>
+                </div>
+                <h4 class="cases mt-2">2,765,872</h4>
+            </div>
             </div>
         </div>
-    </section>
+        <div class="col-lg-4 col-sm-6 p-3">
+                <div class="service_box black">
+                  <div class="service_content ">
+                    <h3 class="title">Total Deaths</h3>
+                    
+                    <div class="service_icon">
+                        <span><i class="fas fa-viruses fa-2x"></i> </span>
+                    </div>
+                    <h4 class="cases mt-2">2,765,872</h4>
+                </div>
+                </div>
+            </div>
 
-    <section id="prevention" class="mb-5">
-         <div class="container mt-5">
-           <div class="row">
-             <div class="col-4 ">
-              <img src="https://drive.google.com/uc?id=1R2OYz-DEEDfUGdnHJnnjXAadIKRhUw55" class="mt-5" alt="" style="width: 320px;">
-             
-
+            <div class="col-lg-4 col-sm-6 p-3">
+                <div class="service_box purple">
+                    <div class="service_content">
+                        <h3 class="title">New Cases</h3>
+                        
+                        <div class="service_icon">
+                            <span><i class="fas fa-head-side-virus fa-2x"></i> </span>
+                        </div>
+                        <h4 class="cases mt-2">2,765,872</h4>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-lg-4 col-sm-6 p-3">
+             <div class="service_box orange">
+               <div class="service_content">
+                 <h3 class="title">New Deaths</h3>
+                 
+                 <div class="service_icon">
+                     <span><i class="fas fa-virus-slash fa-2x"></i> </span>
+                 </div>
+                 <h4 class="cases mt-2">2,765,872</h4>
              </div>
-             <div class="col-8">
-               <h2 class="font-weight-bold mt-5">How to prevent?</h2>
-               <ul class="mt-2"> 
-                <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente cumque doloribus magnam ullam provident? Quod facilis vero voluptatibus consectetur sunt doloribus aliquid modi in itaque nesciunt molestias laudantium sequi animi, fugit, asperiores error. Aut, sit laudantium. Deleniti harum perferendis autem officia tenetur, molestias incidunt laboriosam ipsam sed, amet fugit dolore?</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis blanditiis laudantium accusamus. Voluptas iste fugit, ipsum molestiae qui vel alias, nobis, illo aliquam sapiente dolorem. Voluptatibus facere laborum cumque?</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis blanditiis laudantium accusamus. Voluptas iste fugit, ipsum molestiae qui vel alias, nobis, illo aliquam sapiente dolorem. Voluptatibus facere laborum cumque?</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis blanditiis laudantium accusamus. Voluptas iste fugit, ipsum molestiae qui vel alias, nobis, illo aliquam sapiente dolorem. Voluptatibus facere laborum cumque?</li>
-               </ul>
              </div>
-           </div>
          </div>
-    </section>
-     
+         <div class="col-lg-4 col-sm-6 p-3">
+                 <div class="service_box red">
+                   <div class="service_content ">
+                     <h3 class="title">Critical Ones</h3>
+                     
+                     <div class="service_icon">
+                         <span><i class="fas fa-lungs-virus fa-2x"></i> </span>
+                     </div>
+                     <h4 class="cases mt-2">2,765,872</h4>
+                 </div>
+                 </div>
+             </div>
 
-    <footer class="container-fluid bg-dark">
-         <h6 class="text-center mb-0 py-3 text-white">&copy Copyright 2020 WebArch</h6>
-    </footer>
+       </div>
+    </div>
+    
 
   </body>
 </html>
+
+  
