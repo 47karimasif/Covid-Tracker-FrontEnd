@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "../App.css";
 import landing from "./../Images/landing.jpg";
-import Content1 from "../componets/Home/Content1";
+import Content1 from "../components/Home/Content1";
 
 const Home = () => {
   return (
