@@ -31,15 +31,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/world" className="nav-link">
+              <a
+                href="http://covid-19-web-tracker.herokuapp.com/"
+                className="nav-link"
+              >
                 <span className="link-name py-1">Global-Stats</span>
-              </NavLink>
+              </a>
             </li>
-            {/* <li className="nav-item">
-              <NavLink to="/team" className="nav-link">
-                <span className="link-name py-1">Developers</span>
-              </NavLink>
-            </li> */}
           </ul>
         </div>
       </div>

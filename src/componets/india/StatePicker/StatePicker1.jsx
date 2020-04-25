@@ -18,7 +18,6 @@ const useStats = () => {
   }, []);
   return results;
 };
-
 const StatePicker1 = () => {
   const [selectedState, setSelectedState] = useState();
   const states = useStats();
