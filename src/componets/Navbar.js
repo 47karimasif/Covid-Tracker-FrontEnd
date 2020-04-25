@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a
-                href="http://covid-19-web-tracker.herokuapp.com/"
+                href="https://covid-19-web-tracker.herokuapp.com/"
                 className="nav-link"
               >
                 <span className="link-name py-1">Global-Stats</span>
