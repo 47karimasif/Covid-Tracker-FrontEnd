@@ -1,55 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+
+:root {
+  
+  --background: #121212;
+
+  --black: rgb(20,20,20);
+  --dark-gray: rgb(75,75,75);
+  --light-gray: rgb(185,185,185);
+  --white: rgb(240, 255, 240);
+
+}  
+
+hr{
+    border-bottom:2px solid rgb(68, 169, 209);
+    margin-left:100px;
+    margin-right:100px;
 }
 
-.navbar {
-  background: honeydew !important;
-}
-.showcase {
-  height: 90vh;
-  background-color: honeydew;
-}
-.quote {
-  padding: 5px;
-  border-left: 2px solid rgb(0, 88, 19);
-  margin-left: 20px;
-}
-.StatePicker_formControl__UIZop {
-  margin-bottom: 0 !important;
-}
-.content {
-  height: 60vh;
-  background-color: rgb(252, 225, 255);
+@media(max-width:1024px)
+{
+          .home-container{
+            height:60vh;
+          }
+
+          .home-text{
+            padding-right:10px;
+        }
+        .home-image{
+            padding-left: 0px;
+        }
+
+        .about-container{
+            height:50vh;
+            margin-top:10vh;
+            margin-bottom:10vh;
+        }
+    
+        .about-text{
+            padding-left:10px;
+        }
+        .about-image{
+            padding-right: 75px;
+        }
+
 }
 
-@media (max-width: 576px) {
-  .showcase {
-    height: 70vh;
-  }
-  .display-3 {
-    font-size: 2rem;
-  }
-  .showcase-content h1 {
-    text-align: left !important;
-  }
-  .showcase-content .quote {
-    font-size: 1rem;
-    margin-left: 0;
-    text-align: left !important;
-  }
-  .showcase-content .tagline {
-    font-size: 0.9rem;
-    padding: 0 !important;
-  }
-  .state {
-    margin-right: 0;
-  }
+
+@media(max-width:768px)
+{
+    
+
+    hr{
+        display:none;
+    }
+      
+    *{
+        font-size:14px;
+    }
+    
+    a.nav-link:hover{
+        border-bottom:2px solid transparent;
+        font-weight:bold;
+      }
+
+    .home-text{
+        padding-right:10px;
+    }
+    .home-image{
+        padding-left: 0px;
+    }
+
+    .about-text{
+        padding-left:10px;
+    }
+    .about-image{
+        padding-right: 0px;
+    }
+    
+    .about-container{
+        margin-top:10vh;
+        margin-bottom:10vh;
+    }
+
+    .symptoms-container{
+    margin-bottom: 20vh;
+    }
 }

@@ -1,0 +1,20 @@
+
+.home-container{
+    margin-top:15vh;
+    height:65vh;
+}
+
+.home-text{
+    padding-right:100px;
+}
+.home-image{
+    padding-left: 100px;
+}
+
+.home-text h1{
+    font-weight:bolder;
+}
+.home-text h4{
+    font-weight:500;
+    color:rgb(68, 169, 209);
+}

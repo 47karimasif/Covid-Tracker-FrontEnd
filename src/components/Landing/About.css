@@ -1,0 +1,17 @@
+
+.about-container{
+    height:50vh;
+    margin-top:20vh;
+}
+
+.about-text{
+    padding-left:100px;
+}
+.about-image{
+    padding-right: 100px;
+}
+
+.about-text h1{
+    font-weight:bolder;
+    color:rgb(68, 169, 209);
+}

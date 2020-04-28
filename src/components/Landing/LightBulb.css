@@ -1,0 +1,75 @@
+.btn .dark-mode-btn{
+    width: 70px !important;
+}
+
+.far .fa-lightbulb .fa-3x{
+    color: grey !important;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+:root {
+
+--background: #121212;
+
+--black: rgb(20,20,20);
+--dark-gray: rgb(75,75,75);
+--light-gray: rgb(185,185,185);
+--white: rgb(240, 255, 240);
+
+}  
+
+body {
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-x:hidden;
+    font-size: 100%;
+    color: var(--white);
+  }
+  
+  hr{
+      border-bottom:2px solid rgb(68, 169, 209);
+      margin-left:100px;
+      margin-right:100px;
+  }
+  
+  body{
+      overflow-x:hidden;
+  }
+  
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  html.sr .load-hidden {
+      visibility: hidden;
+  }
+  
+  /* Bulb Animations */
+  
+  .dark-bulb button{
+    animation: vibrate 2s  10 ;
+  }
+   
+  @keyframes vibrate {
+    0%, 20%, 50%, 80%, 100% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(-20deg);
+    }
+    60% {
+      transform: rotate(-20deg);
+    }
+  }
+  

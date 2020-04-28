@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
-import Home from "./pages/Home";
+import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar";
 import India from "./pages/India";
 
@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/" component={Landing}></Route>
         <Route exact path="/india" component={India}></Route>
       </Switch>
     </Router>
