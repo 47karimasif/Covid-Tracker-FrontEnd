@@ -28,27 +28,27 @@ hr{
 @media(max-width:1024px)
 {
           .home-container{
-            height:60vh;
+            height:60vh !important;
           }
 
           .home-text{
-            padding-right:10px;
+            padding-right:10px !important;
         }
         .home-image{
-            padding-left: 0px;
+            padding-left: 0px !important;
         }
 
         .about-container{
-            height:50vh;
-            margin-top:10vh;
-            margin-bottom:10vh;
+            height:50vh !important;
+            margin-top:10vh !important;
+            margin-bottom:10vh !important;
         }
     
         .about-text{
-            padding-left:10px;
+            padding-left:10px !important;
         }
         .about-image{
-            padding-right: 75px;
+            padding-right: 75px !important;
         }
 
 }
@@ -59,38 +59,38 @@ hr{
     
 
     hr{
-        display:none;
+        display:none !important;
     }
       
     *{
-        font-size:14px;
+        font-size:14px !important;
     }
     
     a.nav-link:hover{
-        border-bottom:2px solid transparent;
-        font-weight:bold;
+        border-bottom:2px solid transparent !important;
+        font-weight:bold !important;
       }
 
     .home-text{
-        padding-right:10px;
+        padding-right:10px !important;
     }
     .home-image{
-        padding-left: 0px;
+        padding-left: 0px !important;
     }
 
     .about-text{
-        padding-left:10px;
+        padding-left:10px !important;
     }
     .about-image{
-        padding-right: 0px;
+        padding-right: 0px !important;
     }
     
     .about-container{
-        margin-top:10vh;
-        margin-bottom:10vh;
+        margin-top:10vh !important;
+        margin-bottom:10vh !important;
     }
 
     .symptoms-container{
-    margin-bottom: 20vh;
+    margin-bottom: 20vh !important;
     }
 }
